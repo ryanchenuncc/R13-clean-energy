@@ -1,0 +1,38 @@
+<div class="container">
+  <nav class="top-menu">
+    <h1>R13 Clean Energy</h1>
+    <div class="menu-links">
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/summary" routerLinkActive="active">Summary</a>
+      <a routerLink="/reports" routerLinkActive="active">Reports</a>
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h2>Clean Energy Innovations Dashboard</h2>
+
+    <section class="summary-section">
+      <h3>Recent Hydropower Innovations</h3>
+      <p>
+        Hydropower continues to evolve as a cornerstone of renewable energy, with recent projects across continents demonstrating how technology partnerships enable reliable and efficient clean energy generation. In Brazil, small hydroelectric plants like Paredinha are expanding the country's renewable footprint through partnerships with suppliers like WEG, which provides complete electromechanical solutions including turbines, generators, and electrical systems. The emphasis on high-performance equipment ensures operational stability and predictable energy generation returns.
+      </p>
+      <p>
+        In Norway, modernization efforts are transforming hydropower infrastructure. The Svean plant near Trondheim is being upgraded with three new Francis turbines, each capable of handling 26,000 liters per second and generating approximately 12 MW, representing a 10% increase in power output. The Øksenelvane plant in Western Norway is replacing a 70-year-old facility with two state-of-the-art Pelton turbines rated at 55 MW each, increasing annual production by 21 GWh to reach 171 GWh total. These projects demonstrate how strategic reinvestment in aging infrastructure can significantly boost capacity while incorporating advanced control systems for improved grid integration and frequency regulation, essential for supporting variable renewable generation sources.
+      </p>
+      <p class="reference">
+        <strong>Source:</strong>
+        <a href="https://www.smart-energy.com/renewable-energy/future-proofing-hydropower-global-projects-showcase-clean-energy-innovation-and-efficiency/" target="_blank" rel="noopener">
+          Smart Energy International - Future-proofing hydropower: global projects showcase clean energy innovation and efficiency
+        </a>
+      </p>
+    </section>
+
+    <section class="tech-section">
+      <h3>Technical Implementation</h3>
+      <p>
+        This application is built using a modern full-stack architecture with complete separation between frontend and backend. The frontend is developed with Angular 18, utilizing TypeScript for type-safe development and implementing a component-based architecture for maintainability. The backend is powered by Java Spring Boot 2.7.18, providing RESTful API endpoints for authentication and data retrieval. MySQL serves as the relational database management system, storing chart data and application state. Authentication is handled through JSON Web Tokens (JWT), ensuring secure communication between the client and server. The application follows accessibility guidelines (ADA/WCAG) with proper ARIA labels and semantic HTML markup throughout the user interface.
+      </p>
+    </section>
+  </main>
+</div>

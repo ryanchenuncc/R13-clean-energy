@@ -1,0 +1,36 @@
+<div class="container">
+  <nav class="top-menu">
+    <h1>R13 Clean Energy</h1>
+    <div class="menu-links">
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/summary" routerLinkActive="active">Summary</a>
+      <a routerLink="/reports" routerLinkActive="active">Reports</a>
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h2>Summary - Hydropower Capacity Analysis</h2>
+
+    <section class="chart-section">
+      <div class="chart-container">
+        <canvas id="chart1"></canvas>
+      </div>
+
+      <div class="chart-explanation">
+        <h3>Chart Explanation</h3>
+        <p>
+          This bar chart displays the hydropower capacity (in megawatts) of four major projects discussed in the article.
+          The Inga I & II complex in the Democratic Republic of Congo represents the largest capacity at 1,774 MW, highlighting
+          the significant potential of African hydropower infrastructure. The Norwegian projects - Øksenelvane at 110 MW and
+          Svean at 36 MW - demonstrate modern efficiency-focused installations, while Brazil's Paredinha plant at 21.9 MW
+          exemplifies the role of small hydroelectric facilities in expanding renewable energy portfolios.
+        </p>
+        <p class="reference">
+          <strong>Data Source:</strong> Based on capacity figures reported in the Smart Energy International article
+          "Future-proofing hydropower: global projects showcase clean energy innovation and efficiency" (August 2025).
+        </p>
+      </div>
+    </section>
+  </main>
+</div>

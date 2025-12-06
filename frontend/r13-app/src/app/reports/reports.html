@@ -1,0 +1,38 @@
+<div class="container">
+  <nav class="top-menu">
+    <h1>R13 Clean Energy</h1>
+    <div class="menu-links">
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/summary" routerLinkActive="active">Summary</a>
+      <a routerLink="/reports" routerLinkActive="active">Reports</a>
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h2>Reports - Annual Energy Production</h2>
+
+    <section class="chart-section">
+      <div class="chart-container">
+        <canvas id="chart2"></canvas>
+      </div>
+
+      <div class="chart-explanation">
+        <h3>Chart Explanation</h3>
+        <p>
+          This horizontal bar chart illustrates the annual energy production capacity measured in gigawatt-hours (GWh)
+          for Norwegian hydropower facilities. The Sogn og Fjordane Energi (SFE) total portfolio leads significantly
+          at 2,400 GWh, representing the cumulative output of multiple facilities across their operations and
+          sufficient to power approximately 130,000 Norwegian households. The Øksenelvane plant contributes 171 GWh
+          annually after its modernization, while the upgraded Svean facility generates 132 GWh per year, demonstrating
+          how strategic infrastructure improvements can substantially increase renewable energy output from existing
+          hydropower sites.
+        </p>
+        <p class="reference">
+          <strong>Data Source:</strong> Production figures sourced from the Smart Energy International article
+          "Future-proofing hydropower: global projects showcase clean energy innovation and efficiency" (August 2025).
+        </p>
+      </div>
+    </section>
+  </main>
+</div>
